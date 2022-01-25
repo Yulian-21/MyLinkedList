@@ -16,21 +16,11 @@ namespace MyLinkedList.Base
 
         public MyNode(string value)
         {
-            
             Value = value;
-            PreviousNode = MyList.Last;
-
-           // MyList.AddLast(this);
-        }
-
-        public MyNode(MyNode lastNode, MyNode newNode)
-        {
-
-        }
-
-        public MyNode(MyStringLinkedList list)
-        {
-            MyList = list;
+            NextNode = null;
+            PreviousNode = null;
+            //this = NextNode;
+            MyList.AddLast(Value);
         }
     }
 }
